@@ -1,0 +1,31 @@
+body {
+	margin: 0 5%;
+	font-size: 2em;
+	color: #E2E2E6;
+	background-color: #1A1C1E;
+	/* Si tienes pensando usar 'tus fuentes', importalas aqui */
+}
+
+ul { 
+	list-style-type: none;
+}
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	margin: 10px 0px 0px 0px;
+}
+
+a {
+	color: #f25c5c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #fcba03;
+}
+a:hover {
+	background-color: black;
+}
