@@ -1,0 +1,93 @@
+/* CSS en clases por Juan Pedro */
+
+/* 
+	Por lo general, excepto si se indica lo contrario, se sigue este formato para los nombres
+	* t (Texto)
+	** t-rojo (Texto - color Rojo)
+	** t-doble (Texto - Doble tamaño)
+	** t-20px (Texto - 20 Pixeles)
+
+	* f (Fondo)
+	** f-negro (Fondo - color Negro (black))
+
+	* fu (FUente)
+	** fu-arial (FUente - usar Arial)
+
+	* fug (FUente Grosor)
+	** fug-clara (FUente - Grosor Claro (lighter))
+
+	* at (Alineacion Texto)
+	** at-centro (Alinear Texto al Centro (center))
+
+	* dt (Decoracion Texto)
+	** dt-tachado (Decoracion Texto - Tachado (line-through))
+
+	* ef (Estilo Fuente)
+	** ef-italica (Estilo Fuente Italica)
+*/
+
+/* Formatos de texto */
+/* De doble a quintuple, añade mas si quieres */
+.t-doble { font-size: 2em; }
+.t-triple { font-size: 3em; }
+.t-quatruple { font-size: 4em; }
+.t-quintuple { font-size: 5em; }
+/* Unos cuantos tamaños comunes */
+.t-10px { font-size: 10px; }
+.t-12px { font-size: 12px; }
+.t-14px { font-size: 14px; }
+.t-16px { font-size: 16px; }
+.t-18px { font-size: 18px; }
+.t-20px { font-size: 20px; }
+.t-22px { font-size: 22px; }
+.t-24px { font-size: 24px; }
+.t-28px { font-size: 28px; }
+.t-32px { font-size: 32px; }
+
+/* Colores letra */
+.t-rojo { color: red; }
+.t-azul { color: blue; }
+.t-verde { color: green; }
+.t-amarillo { color: yellow; }
+.t-naranja { color: orange; }
+.t-gris { color: gray; }
+.t-blanco { color: white; }
+.t-negro { color: black; }
+
+/* Colores fondo*/
+.f-negro { background-color: black; }
+.f-blanco { background-color: white; }
+.f-rojo { background-color: red; }
+.f-azul { background-color: blue; }
+.f-verde { background-color: green; }
+.f-gris-claro { background-color: lightgray; }
+
+/* Fuentes */
+.fu-arial { font-family: Arial, sans-serif; }
+.fu-verdana { font-family: Verdana, sans-serif; }
+.fu-tahoma { font-family: Tahoma, sans-serif; }
+.fu-times { font-family: 'Times New Roman', serif; }
+.fu-courier { font-family: 'Courier New', monospace; }
+.fu-helvetica { font-family: Helvetica, sans-serif; }
+
+
+/* Fuentes - Grosor */
+.fug-clara { font-weight: lighter; }
+.fug-normal { font-weight: normal; }
+.fug-negrita { font-weight: bold; }
+.fug-fuerte { font-weight: bolder; }
+
+/* Fuentes - Alineacion */
+.at-izquierda { text-align: left; }
+.at-centro { text-align: center; }
+.at-derecha { text-align: right; }
+.at-justificado { text-align: justify; }
+
+/* Fuentes - Decorados */
+.dt-subrayado { text-decoration: underline; }
+.dt-tachado { text-decoration: line-through; }
+.dt-nada { text-decoration: none; }
+
+/* Fuentes - Estilos */
+.ef-italica { font-style: italic; }
+.ef-oblicua { font-style: oblique; }
