@@ -10,26 +10,80 @@
 		<script src="js/js.js"></script>
 	</head>
 
-	<body class="f-gris-claro fu-arial m-0 p-0">
+	<body class="f-gris-claro fu-arial m-0 p-0" id="inicio">
 
 
 
 		<nav class="n-fijo f-cristal at-centro">
 			<div class="an-75" style="margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
 				<span class="fug-negrita t-20px t-azul p-10">Nombre del equipo</span>
-				
 				<div>
-					<a href="#inicio" class="n-enlace t-14px">Inicio</a>
-					<a href="#historia" class="n-enlace t-14px">Historia</a>
-					<a href="#equipo" class="n-enlace t-14px">El Equipo</a>
+					<a onclick="MoverAIDY('inicio')" class="n-enlace t-14px">Inicio</a>
+					<a onclick="MoverAIDY('historia')" class="n-enlace t-14px">Historia</a>
+					<a onclick="MoverAIDY('equipo')" class="n-enlace t-14px">El Equipo</a>
 					<a onclick="MoverAIDY('victorias')" class="n-enlace t-14px">Victorias</a>
 				</div>
-				
-				<a href="#" class="btn f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
+				<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="btn f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
 			</div>
 		</nav>
-		
-		<section class="an-75" style="margin: 40px auto;">
+
+
+
+		<section class="an-75" style="margin: 40px auto;" id="historia">
+			<!-- DIVS para todo esto, div para cada sub-elemento dentro de este section -->
+			<div class="mb-20">
+				<h2 class="at-centro t-32px fug-negrita mb-20">Nuestra historia</h2>
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+						<p class="fug-negrita t-20px m-5">El comienzo</p>
+						<p class="t-16px t-gris dt-nada">Nuestro club se fundo en el año 20xx, con los primeros 12 jugadores, a,b,c,d,e,f,g,h,i,j,k,l,m,n.</p>
+						<p class="t-16px t-gris dt-nada">Los primeros doce, que ya no juegan con nosotros, jugaron en mas de 20 partidos, algunos de los importantes fueron</p>
+						<ul class="t-16px t-gris li-ninguno">
+							<li>Partido contra xyz (Ganadores (3-1))</li>
+							<li>Partido contra xyz (Perdemos (2-3))</li>
+							<li>Partido contra xyz (Empate (1-1))</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mb-20">
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+						<p class="fug-negrita t-20px m-5">Otra cosa</p>
+						<p class="t-16px t-gris dt-nada">Aqui mencionas otras cosas, no se, lo que quieras, es que de verdad que no se de futbol</p>
+						<p class="t-16px t-gris dt-nada">Las etiquetas de &lt;ul&gt; pueden tener la clase li-ninguno (list-item) ninguno</p>
+						<ul class="t-16px t-gris li-ninguno">
+							<li>Esto queda</li>
+							<li>Tal que asi</li>
+							<li>Sin decoraciones</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mb-20">
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+						<p class="fug-negrita t-20px m-5">Aun mas cosas</p>
+						<p class="t-16px t-gris dt-nada">Meta es una de las empresas mas malvadas que existen</p>
+						<p class="t-16px t-gris dt-nada">No te vas a creer lo de cosas malas que han hecho</p>
+						<ul class="t-16px t-gris li-ninguno">
+							<li>Roto repetidamente las normas del GDPR</li>
+							<li>Entregado a los servicios de inteligencia del FBI varias conversaciones de WhatsApp, que, supuestamente, estaban encriptadas 'E2E'</li>
+							<li>Permitido a neo-nazis hospedar sus grupos de odio en Facebook sin consecuencias. Mark Zuc. Ha dicho varias veces que 'no le importa una mierda' que haya neo-nazis en sus plataformas.</li>
+							<li>Ayudado a propagar mentiras y dis-informacion sobre el COVID en Instagram y Facebook.</li>
+							<h3>Fuentes:</h3>
+							<a class="n-enlace t-10px" onclick="AbrirEnlace('https://media.glaad.org/wp-content/uploads/2021/05/10142521/Facebook-White-Supremacy-Report.pdf')">Fuente</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+		</section>
+
+
+		<section class="an-75" style="margin: 40px auto;" id="equipo">
 			<h2 class="at-centro t-32px fug-negrita mb-20">Nuestras Estrellas</h2>
 
 			<!-- Cajitas de cada jugador, duplica TODA la caja para añadir otro -->
