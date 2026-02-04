@@ -24,7 +24,27 @@
 
 	* ef (Estilo Fuente)
 	** ef-italica (Estilo Fuente Italica)
+	
+	* m{b-l-r-t} (Margen (bottom, left, right, top)
+	** m-5 (Margen 5 px (Todos los margenes)
+	** mb-10 (Margen 5 px inferior (Bottom))
+	
+	* b (Borde)
+	** b-1 (Borde solido 1 pixel)
+	** b-gris (color Borde gris)
+	** bor-10 (BOrde con Redondeado de 10px)
 */
+
+
+/* VARIABLES (Las tengo que usar mucho en el propio CSS, puedes ignorar esto) */ 
+/* "pro" de "profesional" */
+:root {
+	--azul-pro: #1a56db;
+	--verde-pro: #059669;
+	--gris-suave: #f3f4f6;
+}
+
+
 
 /* Formatos de texto */
 /* De doble a quintuple, añade mas si quieres */
@@ -70,7 +90,6 @@
 .fu-courier { font-family: 'Courier New', monospace; }
 .fu-helvetica { font-family: Helvetica, sans-serif; }
 
-
 /* Fuentes - Grosor */
 .fug-clara { font-weight: lighter; }
 .fug-normal { font-weight: normal; }
@@ -91,3 +110,119 @@
 /* Fuentes - Estilos */
 .ef-italica { font-style: italic; }
 .ef-oblicua { font-style: oblique; }
+
+/* Margenes */
+.m-5 { margin: 5px; }
+.m-10 { margin: 10px; }
+.m-20 { margin: 20px; }
+
+/* Margenes Top */
+.mt-10 { margin-top: 10px; }
+
+/* Margenes Bottom */
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+/* Margenes Left */
+.ml-10 { margin-left: 10px; }
+
+/* Margenes Right */
+.mr-10 { margin-right: 10px; }
+
+/* Rellenos (Padding) */
+.p-5 { padding: 5px; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+.pt-10 { padding-top: 10px; }
+.pb-10 { padding-bottom: 10px; }
+
+/* Bordes Grosor */
+.b-1 { border: 1px solid; }
+.b-2 { border: 2px solid; }
+
+/* Bordes Colores (puedes combinarlos con los anteriores) */
+.b-negro { border-color: black; }
+.b-rojo { border-color: red; }
+.b-gris { border-color: #ccc; }
+
+/* Redondeado (Border Radius) */
+.bor-4 { border-radius: 4px; }
+.bor-10 { border-radius: 10px; }
+.bor-total { border-radius: 50%; }
+
+/* Vista */
+.v-bloque { display: block; }
+.v-linea { display: inline; }
+.v-linea-bloque { display: inline-block; }
+.v-oculto { display: none; }
+
+/* Flexbox basico (Para centrar contenido facil) */
+.v-flex { display: flex; }
+.v-flex-centro { display: flex; justify-content: center; align-items: center; }
+
+/* Anchos comunes */
+.an-25 { width: 25%; }
+.an-50 { width: 50%; }
+.an-75 { width: 75%; }
+.an-100 { width: 100%; }
+
+/* Sombras basicas */
+.s-suave { box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.s-fuerte { box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+/* Sombras modernas */
+.s-pro { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+
+/* Gradientes para el encabezado */
+.g-azul { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
+
+/* Transiciones (para que los botones no cambien de golpe) */
+.tr-suave { transition: all 0.3s ease; }
+
+/* Efecto Hover (al pasar el ratón) */
+.h-subir:hover { transform: translateY(-5px); }
+
+/* Contenedores con Padding Extra */
+.p-caja { padding: 1.5rem; }
+
+
+
+
+/* Botones modernos */
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 8px;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	font-weight: 600;
+}
+
+
+
+
+.n-fijo {
+	position: sticky;
+	top: 0;
+	z-index: 1000; 
+}
+
+.f-cristal {
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.n-enlace {
+	text-decoration: none;
+	padding: 15px 20px;
+	display: inline-block;
+	color: #333;
+	font-weight: 600;
+	transition: color 0.3s;
+}
+
+.n-enlace:hover {
+	color: var(--azul-pro);
+}

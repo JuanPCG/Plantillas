@@ -9,12 +9,121 @@
 		<!-- Scripts mios -->
 		<script src="js/js.js"></script>
 	</head>
-	<body class="t-quintuple">
-		<div class="f-negro">
-			<span class="t-azul fu-arial">PR</span>
-			<span class="t-rojo">OB</span>
-			<span class="t-amarillo fu-verdana fug-clara">AN</span>
-			<span class="t-verde">DO</span>
-		</div>
+
+	<body class="f-gris-claro fu-arial m-0 p-0">
+
+
+
+		<nav class="n-fijo f-cristal at-centro">
+			<div class="an-75" style="margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+				<span class="fug-negrita t-20px t-azul p-10">Nombre del equipo</span>
+				
+				<div>
+					<a href="#inicio" class="n-enlace t-14px">Inicio</a>
+					<a href="#historia" class="n-enlace t-14px">Historia</a>
+					<a href="#equipo" class="n-enlace t-14px">El Equipo</a>
+					<a onclick="MoverAIDY('victorias')" class="n-enlace t-14px">Victorias</a>
+				</div>
+				
+				<a href="#" class="btn f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
+			</div>
+		</nav>
+		
+		<section class="an-75" style="margin: 40px auto;">
+			<h2 class="at-centro t-32px fug-negrita mb-20">Nuestras Estrellas</h2>
+
+			<!-- Cajitas de cada jugador, duplica TODA la caja para añadir otro -->
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<!-- <div class="f-gris-claro r-total m-10" style="width: 100px; height: 100px; margin: 0 auto; overflow: hidden; border: 3px solid var(--azul-pro);">
+						<img src="#" alt="Jugador" style="width: 100%; height: 100%; object-fit: cover;">
+					</div> -->
+					<!-- Descomenta esto si quieres que los jugadores tengan fotos (¿Igual no publicar fotos de niños en internet es mejor? Eso es decision tuya) -->
+					<p class="fug-negrita t-20px m-5">Nombre</p>
+					<p class="t-14px t-gris dt-nada">Posicion</p>
+				</div>
+			
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<!-- <div class="f-gris-claro r-total m-10" style="width: 100px; height: 100px; margin: 0 auto; overflow: hidden; border: 3px solid var(--azul-pro);">
+						<img src="#" alt="Jugador" style="width: 100%; height: 100%; object-fit: cover;">
+					</div> -->
+					<p class="fug-negrita t-20px m-5">Nombre 2</p>
+					<p class="t-14px t-gris dt-nada">Posicion 2</p>
+				</div>
+			</div>
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<!-- <div class="f-gris-claro r-total m-10" style="width: 100px; height: 100px; margin: 0 auto; overflow: hidden; border: 3px solid var(--azul-pro);">
+						<img src="#" alt="Jugador" style="width: 100%; height: 100%; object-fit: cover;">
+					</div> -->
+					<p class="fug-negrita t-20px m-5">Nombre 3</p>
+					<p class="t-14px t-gris dt-nada">Posicion 3</p>
+				</div>
+			<!-- </div> --> <!-- Como ... Uh, efecto segundario no intencional si quitas este div (Final de cada jugador), se re-estructura completamente en formas
+							aparentemente aleatorias, pero quedan hasta bien, juega con esto un poco a ver si te gusta alguna conbinacion -->
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<!-- <div class="f-gris-claro r-total m-10" style="width: 100px; height: 100px; margin: 0 auto; overflow: hidden; border: 3px solid var(--azul-pro);">
+						<img src="#" alt="Jugador" style="width: 100%; height: 100%; object-fit: cover;">
+					</div> -->
+					<p class="fug-negrita t-20px m-5">Nombre 4</p>
+					<p class="t-14px t-gris dt-nada">Posicion 4</p>
+				</div>
+			</div>
+
+
+		</section>
+		<section class="f-gris-claro p-20" id="victorias">
+			<div class="an-75" style="margin: 0 auto;">
+				<h2 class="t-28px fug-negrita mb-20">⚽ Victorias increibles</h2> <!-- Se que no deberia usar un emoticono en si, ya el codigo para eso luego -->
+				<!-- O igual cambiar esto a 'nuestros partidos' o algo por el estilo, si quieres poner tambien los empates o cuando pierden -->
+
+				<!-- Copia este article (Clase de HTML de decoracion, esto podria ser un div perfectamente) tantas veces como quieras -->
+				<article class="f-blanco r-10 s-pro mb-20 v-flex tr-suave h-subir" style="overflow: hidden;" id="Noticia1">
+					<div class="f-verde p-20 v-flex v-flex-centro" style="min-width: 120px;"> <!-- Tengo que hacer una clase solo para lo de min-width 120 -->
+						<span class="t-blanco t-triple fug-negrita">3-1</span>
+					</div>
+					<div class="p-caja">
+						<span class="t-verde fug-negrita t-12px">VICTORIA CONTRA "FUTBOL CLUB FUTBOL CF"</span>
+						<h3 class="t-22px m-0">¡Gran triunfo en el campo municipal!</h3>
+						<p class="t-gris t-10px">Aqui va la fecha y no se que... Miercoles 4 de Febrero de 2026</p>
+						<p class="t-gris t-16px">Llega ahi el Nombre 4 todo chulo el y marca 3 golazos contra los de FUTBOL CLUB FUTBOL CF y no se, la verdad que no se de futbol.</p>
+						<a href="#" class="t-azul dt-nada fug-negrita t-14px tr-suave">Leer cronica completa</a>
+					</div>
+				</article>
+
+				<article class="f-blanco r-10 s-pro mb-20 v-flex tr-suave h-subir" style="overflow: hidden;" id="Noticia2">
+					<div class="f-verde p-20 v-flex v-flex-centro" style="min-width: 120px;">
+						<span class="t-blanco t-triple fug-negrita">2-0</span>
+					</div>
+					<div class="p-caja">
+						<span class="t-verde fug-negrita t-12px">VICTORIA CONTRA "NO SE QUE EQUIPO"</span>
+						<h3 class="t-22px m-0">¡GANAMOS EN CASA!</h3>
+						<p class="t-gris t-10px">Martes 31 de Febrero de 2026</p>
+						<p class="t-gris t-16px">De verdad que no se de futbol, aqui van algunas palabras que escucho mucho, para rellenar: Amarilla, roja, delantero, penalty, portero.</p>
+						<a href="#" class="t-azul dt-nada fug-negrita t-14px tr-suave">Leer crónica completa</a>
+					</div>
+				</article>
+
+
+				<article class="f-blanco r-10 s-pro mb-20 v-flex tr-suave h-subir" style="overflow: hidden;" id="Noticia3">
+					<div class="f-verde p-20 v-flex v-flex-centro" style="min-width: 120px;">
+						<span class="t-blanco t-triple fug-negrita">4-1</span>
+					</div>
+					<div class="p-caja">
+						<span class="t-verde fug-negrita t-12px">QUE NO SE DE FUTBOL</span>
+						<h3 class="t-22px m-0">¡Epica victoria en el campo de donde sea!</h3>
+						<p class="t-gris t-10px">Viernes -2 de Febrero de 2026</p>
+						<p class="t-gris t-16px">Aqui va algo, no se que, pero bueno, eso ya lo pondre cuando me digan lo que es. ¡Un saludo!</p>
+						<a href="#" class="t-azul dt-nada fug-negrita t-14px tr-suave">Leer crónica completa</a>
+					</div>
+				</article>
+
+			</div>
+		</section>
 	</body>
 </html>
