@@ -3,6 +3,7 @@ function AbrirEnlace(enlace) {
 }
 
 function MoverAIDY(id_elemento) { /* Nos mueve al elemento (Posicion Y) cuando lo llamamos */
+		/* Mover a ID Y */
 	const elemento = document.getElementById(id_elemento);
 	
 	if (elemento) {
