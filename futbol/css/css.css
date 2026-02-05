@@ -229,3 +229,32 @@
 .centrar { margin: 0 auto; }
 .fondo-borroso2 { backdrop-filter: blur(2px); }
 
+
+
+@media (max-width: 768px) {
+    .an-75 {
+        width: 100%;
+    }
+    .MOVIL {
+		width: 100%;
+		display: grid;
+	}
+	.t-14px {
+		font-size: 1.5em;
+	}
+	.t-16px {
+		font-size: 1.5em;
+	}
+	.t-12px {
+		font-size: 1.5em;
+	}
+	
+	.t-10px {
+		font-size: 1.5em;
+	}
+	
+	.t-20px {
+		font-size: 2em;
+	}
+	
+}
