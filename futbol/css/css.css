@@ -73,6 +73,7 @@
 .t-gris { color: gray; }
 .t-blanco { color: white; }
 .t-negro { color: black; }
+.t-gris333 { color: #333; }
 
 /* Colores fondo*/
 .f-negro { background-color: black; }
@@ -80,7 +81,12 @@
 .f-rojo { background-color: red; }
 .f-azul { background-color: blue; }
 .f-verde { background-color: green; }
+.f-amarillo { background-color: yellow; }
 .f-gris-claro { background-color: lightgray; }
+.f-blanco-navbar { background-color: rgba(255, 255, 255, 0.9); }
+
+
+
 
 /* Fuentes */
 .fu-arial { font-family: Arial, sans-serif; }
@@ -133,8 +139,13 @@
 .p-5 { padding: 5px; }
 .p-10 { padding: 10px; }
 .p-20 { padding: 20px; }
+.p-10-20 { padding: 10px 20px; }
 .pt-10 { padding-top: 10px; }
 .pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+.pt-20 { padding-top: 20px; }
+.pr-15 { padding-right: 15px; }
+.pl-15 { padding-left: 15px; }
 
 /* Bordes Grosor */
 .b-1 { border: 1px solid; }
@@ -148,7 +159,13 @@
 /* Redondeado (Border Radius) */
 .bor-4 { border-radius: 4px; }
 .bor-10 { border-radius: 10px; }
+.bor-6 { border-radius: 6px; }
+.bor-8 { border-radius: 8px; }
 .bor-total { border-radius: 50%; }
+
+/* Bordes (Mas) */
+.bord-nada { border: none; }
+
 
 /* Vista */
 .v-bloque { display: block; }
@@ -177,7 +194,6 @@
 .g-azul { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
 /* AUN NO ESTA IMPLEMENTADO DEL TODO */
 
-
 /* Transiciones (para que los botones no cambien de golpe) */
 .tr-suave { transition: all 0.3s ease; }
 
@@ -191,45 +207,25 @@
 /* Unordered lists */
 .li-ninguno { list-style-type: none; }
 
+/* Posiciones */
+.pos_peg { position: sticky }
 
+/* Superior */
+.top0 { top: 0; }
+.top10p { top: 10%; }
 
+/* Indice Z */
+.z1 { z-index: 1; } /* EN EL NAVBAR, SI METES ALGO MAS EN EL Z INDEX, ASEGURATE DE SUBIR ESTO, TIENE QUE SER MAYOR QUE LOS OTROS */
+.z-1 { z-index: -1; }
 
+/* Transiciones */
+.transicion-colortexto-azul { transition: color 0.3s; }
+.transicion-colortexto-azul:hover { color: var(--azul-pro); }
 
+/* Cosas de cursor */
+.cur-pointer { cursor: pointer; }
 
-/* Botones modernos */
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border-radius: 8px;
-	text-decoration: none;
-	cursor: pointer;
-	border: none;
-	font-weight: 600; /* O, bolder */
-}
+/* Clases de utilidad (Vamos, que no se como categorizarlas) */
+.centrar { margin: 0 auto; }
+.fondo-borroso2 { backdrop-filter: blur(2px); }
 
-
-
-.n-fijo {
-	position: sticky;
-	top: 0;
-	z-index: 1; /* SI METES ALGO MAS EN EL Z INDEX, ASEGURATE DE SUBIR ESTO, TIENE QUE SER MAYOR QUE LOS OTROS */
-}
-
-.f-cristal {
-	background: rgba(255, 255, 255, 0.9);
-	backdrop-filter: blur(10px); /* Esto queda muy chulo, con la barra que esta pegada arriba en la pantalla */
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.n-enlace {
-	text-decoration: none;
-	padding: 15px 20px;
-	display: inline-block;
-	color: #333;
-	font-weight: 600;
-	transition: color 0.3s;
-}
-
-.n-enlace:hover {
-	color: var(--azul-pro);
-}
