@@ -166,7 +166,6 @@
 /* Bordes (Mas) */
 .bord-nada { border: none; }
 
-
 /* Vista */
 .v-bloque { display: block; }
 .v-linea { display: inline; }
@@ -228,33 +227,25 @@
 /* Clases de utilidad (Vamos, que no se como categorizarlas) */
 .centrar { margin: 0 auto; }
 .fondo-borroso2 { backdrop-filter: blur(2px); }
-
+.redondeado5 { border-radius: 5px; } /* En la barra de arriba */
 
 
 @media (max-width: 768px) {
-    .an-75 {
+    .an-75 { /* En movil, 75% es muy poco */
         width: 100%;
     }
     .MOVIL {
 		width: 100%;
 		display: grid;
 	}
-	.t-14px {
-		font-size: 1.5em;
+	.MOVIL_NO_SA {
+		justify-content: normal !important; /* Como no sea !important la barra de arriba se lo come y no lo usa en movil. */
 	}
-	.t-16px {
-		font-size: 1.5em;
+	.MOVIL_MiniBotonLargo { /* Para el boton de arriba de 'redes sociales */
+		margin: 0 auto;
+		width: 90%;
 	}
-	.t-12px {
-		font-size: 1.5em;
+	.t-10px .t-12px .t-14px .t-16px .t-18px .t-20px { /* Esto es DESPUES de aplicarse, osea que se mantienen los tamaños, y luego se agrandan un poco */
+		font-size: 1em;
 	}
-	
-	.t-10px {
-		font-size: 1.5em;
-	}
-	
-	.t-20px {
-		font-size: 2em;
-	}
-	
 }

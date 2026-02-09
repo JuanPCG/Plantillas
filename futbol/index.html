@@ -17,8 +17,8 @@
 
 
 
-		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL">
-			<div  style="margin: 0 auto;  justify-content: space-between; align-items: center;" class="an-75 v-flex MOVIL">
+		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL redondeado5">
+			<div  style="margin: 0 auto;  justify-content: space-between; align-items: center;" class="an-75 v-flex MOVIL MOVIL_NO_SA">
 				<span class="fug-negrita t-20px t-azul p-10 MOVIL">Nombre del equipo (O logo)</span>
 				<div>
 					<!-- El primero (inicio) no hace mucho, el segundo (historia) esta literalmente pegado, asi que si quieres, puedes quitarlo -->
@@ -27,8 +27,9 @@
 					<a onclick="MoverAIDY('equipo')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">El Equipo</a>
 					<a onclick="MoverAIDY('victorias')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Victorias</a>
 					<a onclick="MoverAIDY('botones')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test botones</a>
+					<a onclick="MoverAIDY('fondo')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test scroll largo</a>
 				</div>
-				<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
+				<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px MOVIL_MiniBotonLargo">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
 			</div>
 		</nav>
 
@@ -198,26 +199,37 @@
 					<div class="p-caja">
 						<span class="t-rojo fug-negrita t-12px">Nuestros Enlaces</span>
 						<h3 class="t-22px m-0">Visita nuestras redes sociales</h3>
-						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> 
-						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-rojo t-blanco t-12px">¡Siguenos en (red social)!</a> 
-						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-gris-claro t-negro t-12px">¡Siguenos en (red social)!</a> 
-						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-verde t-blanco t-12px">¡Siguenos en (red social)!</a> 
-						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-amarillo t-negro t-12px">¡Siguenos en (red social)!</a> 
+						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="m-5 fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px">¡Siguenos en (red social)!</a> 
+						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="m-5 fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-rojo t-blanco t-12px">¡Siguenos en (red social)!</a> 
+						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="m-5 fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-gris-claro t-negro t-12px">¡Siguenos en (red social)!</a> 
+						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="m-5 fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-verde t-blanco t-12px">¡Siguenos en (red social)!</a> 
+						<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="m-5 fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-amarillo t-negro t-12px">¡Siguenos en (red social)!</a> 
 						<h3 class="t-22px m-0">Eston son enlaces mas simples (Nav bar)</h3>
 						<div>
-							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Hola</a>
-							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Cambia</a>
-							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Estos</a>
-							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Enlaces</a>
-							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Gracias</a>
+							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer m-5">Hola</a>
+							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer m-5">Cambia</a>
+							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer m-5">Estos</a>
+							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer m-5">Enlaces</a>
+							<a onclick="AbrirEnlace('')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer m-5">Gracias</a>
 						</div>
 					</div>
 				</article>
 			</div>
 		</section>
-		<div style="margin-bottom: 2000px;">
+		<div style="margin-bottom: 4000px;">
 			<h3>Este espacio esta en blanco, es para probar el deslizamiento con los botones de javascript</h3>
 			<h3>PD: Se que tengo que arreglar la ortografia, cuando acabe la página la pasare por un corrector</h3>
+		</div>
+		<div id="fondo" class="centrar p-caja fu-times f-blanco tr-suave mb-20 s-pro r-10">
+			<div>
+				<p>WOW. Que de mucho has bajado, no?</p>
+				<p>Por favor, ignora esto.</p>
+				<p>Estoy probando con elementos muy largos, y la barra superior.</p>
+				<p>Que al parecer se queda enganchada en el ultimo elemento.</p>
+				<p>No se por que.</p>
+				<p>Bueno, tengo una idea.</p>
+				
+			</div>
 		</div>
 	</body>
 </html>
