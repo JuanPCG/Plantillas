@@ -248,4 +248,9 @@
 	.t-10px .t-12px .t-14px .t-16px .t-18px .t-20px { /* Esto es DESPUES de aplicarse, osea que se mantienen los tamaños, y luego se agrandan un poco */
 		font-size: 1em;
 	}
+	.MOVIL-Letrero {
+		display: block !important;
+		/* Esto es para la parte de los puntos, donde lo de los partidos, que en movil ocupababa mas de la mitad de la pantalla (Horizontalmente)
+		   Cuando estaba como flex, si esta como block sale arriba/abajo, es mejor ocupar espacio vertical que horizontal */
+	}
 }
