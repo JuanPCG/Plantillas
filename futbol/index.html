@@ -16,8 +16,13 @@
 	<body class="f-gris-claro fu-arial m-0 p-0" id="inicio">
 
 
-
 		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL redondeado5">
+			<!-- En algunos navegadores de moviles (Gecko) esto se queda demasiado pegado en la parte superior -->
+			<!-- Puedes ponerle un margin a el elemento de nav, pero en navegadores Chromium se ve raro -->
+			<!-- La siguiente mejor opcion es hacer que en Javascript, al cargar, detecte si tenemos Mozilla Android -->
+			<!-- Como nuestro agente, si es asi, añadimos una clase que le de un margen de unos pixeles, o 1% por arriba -->
+			<!-- Aunque esto es peligroso, por que cualquiera puede mentirnos con un agent switcher, pero cuando lo piensas -->
+			<!-- No tiene sentido que alguien que vaya a ver esta página este usando un cambiador de agente de navegador -->
 			<div  style="margin: 0 auto;  justify-content: space-between; align-items: center;" class="an-75 v-flex MOVIL MOVIL_NO_SA">
 				<span class="fug-negrita t-20px t-azul p-10 MOVIL">Nombre del equipo (O logo)</span>
 				<div>

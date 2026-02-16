@@ -243,7 +243,7 @@
 	}
 	.MOVIL_MiniBotonLargo { /* Para el boton de arriba de 'redes sociales */
 		margin: 0 auto;
-		width: 90%;
+		width: 80%;
 	}
 	.t-10px .t-12px .t-14px .t-16px .t-18px .t-20px { /* Esto es DESPUES de aplicarse, osea que se mantienen los tamaños, y luego se agrandan un poco */
 		font-size: 1em;
