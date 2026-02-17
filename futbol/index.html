@@ -1,5 +1,7 @@
 <html>
 	<head>
+		<meta charset="UTF-8"> <!-- Me faltaba esto -->
+
 		<!-- Lo de FontAwesome (Iconos) -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 
@@ -13,8 +15,9 @@
 		<title>CAMBIAR ESTE NOMBRE</title>
 	</head>
 
-	<body class="f-gris-claro fu-arial m-0 p-0" id="inicio">
-
+	<body class="f-gris-claro fu-arial m-0 p-0" id="inicio" onload="detectar_safari()">
+		<!-- <div id="Cambiame"></div> -->
+		<!-- Pruebas webkit/Safari -->
 
 		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL redondeado5">
 			<!-- En algunos navegadores de moviles (Gecko) esto se queda demasiado pegado en la parte superior -->
