@@ -219,7 +219,7 @@
 
 /* Transiciones */
 .transicion-colortexto-azul { transition: color 0.3s; }
-.transicion-colortexto-azul:hover { color: var(--azul-pro); }
+.transicion-colortexto-azul:hover { color: var(--azul-pro) ; }
 
 /* Cosas de cursor */
 .cur-pointer { cursor: pointer; }
@@ -235,15 +235,34 @@
 	color: white !important;
 }
 .modooscuro_minicont { /* El navbar */
-	background-color: #333;
+	background-color: #1e1e1e;
 }
 .modooscuro_minicont a {
 	color: white !important;
 }
-
+.modooscuro_minicont a:hover {
+	color: red !important;
+}
 
 body.mod p, body.mod h3 {
   color: #333;
+}
+
+.f_oscuro_n1 {
+	background-color: #242424;
+	color: white !important;
+}
+.f_oscuro_n1 * {
+	color: white !important;
+}
+
+
+
+body.mod span {
+  color: white;
+}
+.forzar-no-trans {
+	transition: none !important;
 }
 
 @media (max-width: 768px) {

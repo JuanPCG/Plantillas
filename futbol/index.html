@@ -3,14 +3,15 @@
 		<meta charset="UTF-8"> <!-- Me faltaba esto -->
 
 		<!-- Lo de FontAwesome (Iconos) -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-
-		<!-- Estilos mios -->
-		<link rel="stylesheet" href="css/css.css">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">	
 		
 		<!-- Scripts mios -->
 		<script src="js/js.js"></script>
 		
+		<!-- Estilos mios -->
+		<link rel="stylesheet" href="css/css.css">	
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>CAMBIAR ESTE NOMBRE</title>
 	</head>
@@ -26,18 +27,18 @@
 			<!-- Como nuestro agente, si es asi, añadimos una clase que le de un margen de unos pixeles, o 1% por arriba -->
 			<!-- Aunque esto es peligroso, por que cualquiera puede mentirnos con un agent switcher, pero cuando lo piensas -->
 			<!-- No tiene sentido que alguien que vaya a ver esta página este usando un cambiador de agente de navegador -->
-			<div  style="margin: 0 auto;  justify-content: space-between; align-items: center;" class="an-75 v-flex MOVIL MOVIL_NO_SA">
+			<div  style="margin: 0 auto;  justify-content: space-between; align-items: center;" class="an-75 v-flex MOVIL MOVIL_NO_SA ">
 				<span class="fug-negrita t-20px t-azul p-10 MOVIL">Nombre del equipo (O logo)</span>
 				<div>
 					<!-- El primero (inicio) no hace mucho, el segundo (historia) esta literalmente pegado, asi que si quieres, puedes quitarlo -->
-					<a onclick="MoverAIDY('inicio')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Inicio</a>
-					<a onclick="MoverAIDY('historia')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Historia</a>
-					<a onclick="MoverAIDY('equipo')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">El Equipo</a>
-					<a onclick="MoverAIDY('victorias')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Victorias</a>
-					<a onclick="MoverAIDY('botones')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test botones</a>
-					<a onclick="MoverAIDY('fondo')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test scroll largo</a>
+					<a onclick="MoverAIDY('inicio')" class="t-gris333 fug-fuerte t-14px  pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b0">Inicio</a>
+					<a onclick="MoverAIDY('historia')" class="t-gris333 fug-fuerte t-14px pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b1" >Historia</a>
+					<a onclick="MoverAIDY('equipo')" class="t-gris333 fug-fuerte t-14px pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b2">El Equipo</a>
+					<a onclick="MoverAIDY('victorias')" class="t-gris333 fug-fuerte t-14px pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b3">Victorias</a>
+					<a onclick="MoverAIDY('botones')" class="t-gris333 fug-fuerte t-14px pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b4">Test botones</a>
+					<a onclick="MoverAIDY('fondo')" class="t-gris333 fug-fuerte t-14px pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer" id="b5">Test scroll largo</a>
 					<!-- Probando modo oscuro -->
-					<a onclick="ModoOscuro()" class="redondeado5 f-gris-claro t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Modo Oscuro</a>
+					<a onclick="ModoOscuro()" class="redondeado5 t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer"><i class="fas fa-moon"></i></a>
 				</div>
 				<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px MOVIL_MiniBotonLargo">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
 			</div>
@@ -50,7 +51,7 @@
 			<div class="mb-20">
 				<h2 class="at-centro t-32px fug-negrita mb-20">Nuestra historia</h2>
 				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir"  id="co1">
 						<p class="fug-negrita t-20px m-5">El comienzo</p>
 						<p class="t-16px t-gris dt-nada">Nuestro club se fundo en el año 20xx, con los primeros 12 jugadores, a,b,c,d,e,f,g,h,i,j,k,l,m,n.</p>
 						<p class="t-16px t-gris dt-nada">Los primeros doce, que ya no juegan con nosotros, jugaron en mas de 20 partidos, algunos de los importantes fueron</p>
@@ -64,7 +65,7 @@
 			</div>
 			<div class="mb-20">
 				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="co2">
 						<p class="fug-negrita t-20px m-5">Otra cosa</p>
 						<p class="t-16px t-gris dt-nada">Aqui mencionas otras cosas, no se, lo que quieras, es que de verdad que no se de futbol</p>
 						<p class="t-16px t-gris dt-nada">Las etiquetas de &lt;ul&gt; pueden tener la clase li-ninguno (list-item) ninguno</p>
@@ -73,23 +74,33 @@
 							<li>Tal que asi</li>
 							<li>Sin decoraciones</li>
 						</ul>
+						<p class="t-16px t-gris dt-nada">Alternativamente, las etiquetas de &lt;ul&gt; pueden <strong>NO</strong> tener la clase li-ninguno, lo que las deja tal que asi</p>
+						<ul class="t-16px t-gris">
+							<li>Esto queda</li>
+							<li>Tal que asi</li>
+							<li>Sin decoraciones</li>
+						</ul>
+						<p class="t-18px">PERO OJO CON ESTO!!!</p>
+						<p>Te has fijado en eso?</p>
+						<p class="t-10px">Venga, mira mejor</p>
+						<p class="t-24px">LOS PUNTOS SE QUEDAN AL PRINCIPIO!!!</p>
 					</div>
 				</div>
 			</div>
 			<div class="mb-20">
 				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+					<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="co3">
 						<p class="fug-negrita t-20px m-5">Aun mas cosas</p>
-						<p class="t-16px t-gris dt-nada">Meta es una de las empresas mas malvadas que existen</p>
-						<p class="t-16px t-gris dt-nada">No te vas a creer lo de cosas malas que han hecho</p>
+						<p class="t-16px t-gris dt-nada">Hola! Esto es un parrafo!</p>
+						<p class="t-16px t-gris dt-nada">Y esto tambien es un parrafo!</p>
 						<ul class="t-16px t-gris li-ninguno">
-							<li>Roto repetidamente las normas del GDPR</li>
-							<li>Entregado a los servicios de inteligencia del FBI varias conversaciones de WhatsApp, que, supuestamente, estaban encriptadas 'E2E'</li>
-							<li>Permitido a neo-nazis hospedar sus grupos de odio en Facebook sin consecuencias. Mark Zuc. Ha dicho varias veces que 'no le importa una mierda' que haya neo-nazis en sus plataformas.</li>
-							<li>Ayudado a propagar mentiras y dis-informacion sobre el COVID en Instagram y Facebook.</li>
-							<h3>Fuentes:</h3>
-							<a class="n-enlace t-10px transicion-colortexto-azul" onclick="AbrirEnlace('https://media.glaad.org/wp-content/uploads/2021/05/10142521/Facebook-White-Supremacy-Report.pdf')">Fuente</a>
+							<li>Esta es una lista desordenada</li>
+							<li>Aqui puedes poner cosas</li>
+							<li>No se, lo que quieras, es tu sitio</li>
+							<li>Otro elemento mas. Ya van cuatro.</li>
 						</ul>
+						<h3>Mira mi enlace</h3>
+						<a class="n-enlace t-14px transicion-colortexto-azul" onclick="AbrirEnlace('https://google.es')">Esto es un enlace que abre Google</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +112,7 @@
 
 			<!-- Cajitas de cada jugador, duplica TODA la caja para añadir otro -->
 			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco1">
 					<!-- <div class="f-gris-claro r-total m-10" style="width: 100px; height: 100px; margin: 0 auto; overflow: hidden; border: 3px solid var(--azul-pro);">
 						<img src="#" alt="Jugador" style="width: 100%; height: 100%; object-fit: cover;">
 					</div> -->
@@ -109,47 +120,47 @@
 					<p class="fug-negrita t-20px m-5">Nombre</p>
 					<p class="t-14px t-gris dt-nada">Posicion</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco2">
 					<p class="fug-negrita t-20px m-5">Nombre 2</p>
 					<p class="t-14px t-gris dt-nada">Posicion 2</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco3">
 					<p class="fug-negrita t-20px m-5">Nombre 3</p>
 					<p class="t-14px t-gris dt-nada">Posicion 3</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco4">
 					<p class="fug-negrita t-20px m-5">Nombre 4</p>
 					<p class="t-14px t-gris dt-nada">Posicion 4</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco5">
 					<p class="fug-negrita t-20px m-5">Nombre 5</p>
 					<p class="t-14px t-gris dt-nada">Posicion 5</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco6">
 					<p class="fug-negrita t-20px m-5">Nombre 6</p>
 					<p class="t-14px t-gris dt-nada">Posicion 6</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco7">
 					<p class="fug-negrita t-20px m-5">Nombre 7</p>
 					<p class="t-14px t-gris dt-nada">Posicion 7</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco8">
 					<p class="fug-negrita t-20px m-5">Nombre 8</p>
 					<p class="t-14px t-gris dt-nada">Posicion 8</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco9">
 					<p class="fug-negrita t-20px m-5">Nombre 9</p>
 					<p class="t-14px t-gris dt-nada">Posicion 9</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco10">
 					<p class="fug-negrita t-20px m-5">Nombre 10</p>
 					<p class="t-14px t-gris dt-nada">Posicion 10</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco11">
 					<p class="fug-negrita t-20px m-5">Nombre 11</p>
 					<p class="t-14px t-gris dt-nada">Posicion 11</p>
 				</div>
-				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir">
+				<div class="f-blanco r-10 s-pro p-caja at-centro tr-suave h-subir" id="jco12">
 					<p class="fug-negrita t-20px m-5">Nombre 12</p>
 					<p class="t-14px t-gris dt-nada">Posicion 12</p>
 				</div>
@@ -226,10 +237,10 @@
 				</article>
 			</div>
 		</section>
-		<div style="margin-bottom: 4000px;">
-			<h3>Este espacio esta en blanco, es para probar el deslizamiento con los botones de javascript</h3>
-			<h3>PD: Se que tengo que arreglar la ortografia, cuando acabe la página la pasare por un corrector</h3>
-		</div>
+		
+		<div style="margin-bottom: 4000px;"> </div>
+		<!-- Aqui hay un espacio en blanco para probar la barra superior de navegacion -->
+		
 		<div id="fondo" class="centrar p-caja fu-times f-blanco tr-suave mb-20 s-pro r-10">
 			<div>
 				<p>WOW. Que de mucho has bajado, no?</p>
