@@ -194,7 +194,7 @@
 /* AUN NO ESTA IMPLEMENTADO DEL TODO */
 
 /* Transiciones (para que los botones no cambien de golpe) */
-.tr-suave { transition: all 0.3s ease; }
+.tr-suave { transition: color 0.3s ease; }
 
 /* Efecto Hover (al pasar el ratón) */
 .h-subir:hover { transform: translateY(-5px); } /* El transoform ocupa mas tiempo en la GPU, pero no es nada para cualquier dispositivo relativamente moderno */
@@ -229,6 +229,22 @@
 .fondo-borroso2 { backdrop-filter: blur(2px); }
 .redondeado5 { border-radius: 5px; } /* En la barra de arriba */
 
+
+.modooscuro {
+	background-color: #333 !important;
+	color: white !important;
+}
+.modooscuro_minicont { /* El navbar */
+	background-color: #333;
+}
+.modooscuro_minicont a {
+	color: white !important;
+}
+
+
+body.mod p, body.mod h3 {
+  color: #333;
+}
 
 @media (max-width: 768px) {
     .an-75 { /* En movil, 75% es muy poco */

@@ -19,7 +19,7 @@
 		<!-- <div id="Cambiame"></div> -->
 		<!-- Pruebas webkit/Safari -->
 
-		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL redondeado5">
+		<nav class="z1 pos_peg top0 f-blanco-navbar at-centro fondo-borroso2 pb-10 pt-10 MOVIL redondeado5" id="nav">
 			<!-- En algunos navegadores de moviles (Gecko) esto se queda demasiado pegado en la parte superior -->
 			<!-- Puedes ponerle un margin a el elemento de nav, pero en navegadores Chromium se ve raro -->
 			<!-- La siguiente mejor opcion es hacer que en Javascript, al cargar, detecte si tenemos Mozilla Android -->
@@ -36,6 +36,8 @@
 					<a onclick="MoverAIDY('victorias')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Victorias</a>
 					<a onclick="MoverAIDY('botones')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test botones</a>
 					<a onclick="MoverAIDY('fondo')" class="t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Test scroll largo</a>
+					<!-- Probando modo oscuro -->
+					<a onclick="ModoOscuro()" class="redondeado5 f-gris-claro t-gris333 fug-fuerte t-14px transicion-colortexto-azul pb-20 pt-20 pr-15 pl-15 v-linea-bloque cur-pointer">Modo Oscuro</a>
 				</div>
 				<a onclick="AbrirEnlace('https://example.com/@La red social aqui')" class="fug-fuerte v-linea-bloque p-10-20 bor-8 dt-nada cur-pointer bord-nada f-azul t-blanco t-12px MOVIL_MiniBotonLargo">¡Siguenos en (red social)!</a> <!-- Si la tienen -->
 			</div>
@@ -155,7 +157,7 @@
 		</section>
 
 
-		<section class="f-gris-claro p-20" id="victorias">
+		<section class=" p-20" id="victorias">
 			<div class="an-75" style="margin: 0 auto;">
 				<h2 class="t-28px fug-negrita mb-20">⚽ Victorias increibles</h2> <!-- Se que no deberia usar un emoticono en si, ya el codigo para eso luego -->
 				<!-- O igual cambiar esto a 'nuestros partidos' o algo por el estilo, si quieres poner tambien los empates o cuando pierden -->
