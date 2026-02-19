@@ -197,7 +197,8 @@
 .tr-suave { transition: color 0.3s ease; }
 
 /* Efecto Hover (al pasar el ratón) */
-.h-subir:hover { transform: translateY(-5px); } /* El transoform ocupa mas tiempo en la GPU, pero no es nada para cualquier dispositivo relativamente moderno */
+.h-subir { transition: all 0.5s; }
+.h-subir:hover { transform: translateY(-10px); } /* El transoform ocupa mas tiempo en la GPU, pero no es nada para cualquier dispositivo relativamente moderno */
 
 /* Contenedores con Padding Extra */
 .p-caja { padding: 1.5rem; }
@@ -252,10 +253,9 @@ body.mod p, body.mod h3 {
 	background-color: #242424;
 	color: white !important;
 }
-.f_oscuro_n1 * {
-	color: white !important;
-}
+.f_oscuro_n1 * { color: white !important; }
 
+.vacia { ; } /* Para el modo oscuro, esta clase no hace nada*/
 
 
 body.mod span {
