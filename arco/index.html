@@ -1,0 +1,196 @@
+<!--
+	No sobreescribramos los CSS estandar! Mejor que dejemos las cosas como estan y usemos clases!
+-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"> <!-- Characterset del HTML -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Informática,Arcos de la Fra.,Arcos de la Frontera,Arcomática, Tiendas de informática, Reparaciones informáticas">
+		<meta name="author" content="Arcomática">
+		<meta name="description" content="Página web oficial Arcomática"> <!-- Meta etiquetas estandares -->
+
+		<meta property="og:title" content="Arcomática">
+		<meta property="og:description" content="Venta de equipos, reparacion, diseño web.">
+		<meta property="og:url" content="https://arcomatica.com">
+		<meta property="og:image" content="https://arcomatica.com/img/logo_embed.png">
+		<meta name="theme-color" content="#003399"> <!-- Todo esto sirve para 'insertar' la página en aplicaciones de mensajeria -->
+
+		<title>Arcomática</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+		<script src="script.js"> /* Separado */ </script>
+	</head>
+	<body onload="cargar()">
+		<header class="barra_arriba"> <!-- La barrita de arriba, la que enseña el logo, telefono y horario -->
+			<div class="contenedor pad_15y">
+				<div class="logo">
+					<img src="img/logo.svg" class="logo-img" alt="Logo">
+					<div class="logo-texto">
+						<div class="nombre-brand">
+							<span class="azul-logo1">Arco</span><span class="azul-logo2">Mática</span>
+						</div>
+						<p class="subtexto">soluciones informáticas</p>
+					</div>
+				</div>
+				<a class="enlace_invisible" href="tel:+34657937084">
+					<div class="contacto">
+						<p>
+							<i class="fas fa-phone"></i>
+							657 937 084
+						</p>
+						<span>¡Llámenos ahora!</span>
+						<br>
+						<span class="fuente_peq">10:00-14:00</span>
+						<br>
+						<span class="fuente_peq">17:00-20:00</span>
+					</div>
+				</a>
+			</div>
+		</header>
+
+		<nav class="fondo444">
+			<div class="contenedor">
+				<ul class="flex ocultar_iconos negrita_menor">
+					<li class="activo transicion" id="primero" onclick="cambiar('primero','Inicio')"> <!-- Inicio: Página 1, Contacto: 2, Academia: 3-->
+						<a class="enlaces_barra_navegacion " href="#">INICIO</a>
+					</li>
+
+					<li class="no_activo transicion"  id="segundo" onclick="cambiar('segundo','Contacto')">
+						<a href="#" class="enlaces_barra_navegacion" >¿DONDE ESTAMOS?</a>
+					</li>
+
+					<li class="no_activo transicion" id="tercero" onclick="cambiar('tercero','Academia')">
+						<a href="#" class="enlaces_barra_navegacion" >DESCUBRE LA ACADEMIA</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="primero_bloque">
+			<section class="img-grande"></section>
+			<section class="servicios">
+				<div class="flex cien wrap_hijos fluido_movil">
+					<div class="caja-servicios azulcaja1 blanco">
+						<i class="fas fa-cog f200p"></i>
+						<h3 class="f16px lineheight14">Venta y reparación de equipos informáticos</h3>
+						<p class="negro negrita">Video vigilancia</p>
+					</div>
+					<div class="caja-servicios azulcaja2 blanco">
+						<i class="fas fa-briefcase f200p"></i>
+						<h3 class="f16px lineheight14">Mantenimiento integral empresas y particulares</h3>
+						<p class="negro negrita">Reparación TV</p>
+					</div>
+					<div class="caja-servicios azulcaja3 blanco">
+						<i class="fas fa-globe f200p"></i>
+						<h3 class="f16px lineheight14">Diseño web y tienda online profesional</h3>
+						<p class="negro negrita">Instalación de redes</p>
+					</div>
+					<div class="caja-servicios azulcaja4 blanco">
+						<i class="fas fa-lightbulb f200p"></i>
+						<h3 class="f16px lineheight14">Reparación móviles y tablets</h3>
+						<p class="negro negrita">Instalación internet Wi-Fi</p>
+					</div>
+					<div class="caja-servicios azulcaja5 blanco">
+						<i class="fas fa-graduation-cap f200p"></i>
+						<h3 class="f16px lineheight14">Academia</h3>
+						<p class="negro negrita">Enseñanzas de informática</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="segundo_bloque">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.5356829903426!2d-5.817176884711256!3d36.757714679957296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d55b1bf0d7f2898!2sARCOMATICA!5e0!3m2!1ses!2ses!4v1561189101213!5m2!1ses!2ses" width="100%" height="700" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+			<div class="pcont1100 p40margenhor padding-0-20">
+				<h2 class="color555 f28px margen_inf20 nonegrita" >Formulario de Contacto</h2>
+				<form action="https://arcomatica.com/bat/enviar.php" method="POST"> <!-- Para el form he copiado directamente los parametros de la página de arcomatica actual -->
+					<div class="flex separar_hijos margen_inf20">
+						<div class="flex1">
+							<input type="text" id="nombre" name="name" placeholder="Nombre" required class="gris_otro cien pad_15 sinbordes color888 fuente_gradecita sinoutline">
+						</div>
+						<div class="flex1">
+							<input class="sinoutline gris_otro cien pad_15 sinbordes color888 fuente_gradecita" name="phone" type="tel" id="telefono" placeholder="Teléfono (6xxxxxxxx)" pattern="[6789][0-9]{8}" title="Introduce un número de 9 dígitos válido (ej: 600123456)" required> <!-- EN FIREFOX esto no funciona. Asi que usamos reglas de regex para forzarlo -->
+						</div>
+						<div class="flex1">
+							<input name="email" type="email" id="email" placeholder="E-Mail" required class="gris_otro cien pad_15 sinbordes color888 fuente_gradecita sinoutline">
+						</div>
+					</div>
+
+					<div class="flex1">
+						<textarea class="gris_otro ciento_ochenta no_redimensionar cien pad_15 sinbordes color888 fuente_gradecita sinoutline" id="mensaje" placeholder="Mensaje" name="message" required></textarea>
+					</div>
+
+					<button type="submit" class="btn-enviar margen_arriba_20 blanco fuente_gradecita raton_marca sinbordes relleno_med azulfondo_otro">Enviar</button>
+				</form>
+			</div>
+		</div>
+		<div id="tercero_bloque" class="separador-peq-vert azulcaja5"> <!-- Academia -->
+			<h3 class="ochenta centrado">Esto es la parte de la academia</h3>
+			<hr class="ochenta margen_sup25_centrado">
+			<h3 class="ochenta centrado">Aqui pondrias tus fotos y mas detalles sobre la academia</h3>
+			<div class="flex justificar_centro separar_hijos wrap_hijos pad_20">
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Alumnos haciendo xyz</figcaption>
+				</figure>
+
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Alumnos con algo</figcaption>
+				</figure>
+
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Alumnos con... Cambia este texto</figcaption>
+				</figure>
+			</div>
+			<br>
+			<p class="negrita ochenta centrado primera_letra_grande">Hola, pon aqui el texto sobre la academia, esto puede ser una pequeña introduccion, o algo por el estilo, puedes, por ejemplo, poner los horarios, o incluso lo que se hace en la academia, por ejemplo, usando una lista de HTML para decir algo como "word", "excel", etc. Esto es texto de relleno, aqui tengo que escribir mucho ya que quiero demostrar que el texto solo ocupa un "80%" de la página, si miras el HTML, este &lt;p&gt; tiene las clases "ochenta" y "primera letra grande", esto hace que el texto solo ocupe un 80%</p>
+			<br>
+			<p class="ochenta centrado negrita">Temas que impartimos en la academia</p>
+			<ul class="ochenta centrado ocultar_iconos">
+				<li>Word</li>
+				<li>Access</li>
+				<li>Excel</li>
+				<li>Mas cosas</li>
+				<li>Aun mas cosas</li>
+				<li>Todavia mas cosas</li>
+			</ul>
+		</div> <!-- Fin de la parte academia -->
+		<div class="sserif fondo444 pad_60_0 grisecito"> <!-- Contacto -->
+			<div class="m250px flex centrar_hijos">
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito"  href="https://maps.app.goo.gl/jN5oDTyEnhcrKeZc8" >	
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+						<i class="fas fa-map-marker-alt azul-logo2 fuente_aun_mas_grandecita"></i>
+					</div>
+					<div>
+						<p class="mar0 fuentenorcont">C/ Fernando Trueba, 15-A</p>
+					</div>
+				</a>
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito" href="tel:657937084">
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+							<i class="fas fa-phone azul-logo2 fuente_aun_mas_grandecita"></i>
+						</div>
+						<div>
+							<p class="mar0 fuentenorcont">657 937 084</p>
+						</div>
+					</a>
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito" href="mailto:info@arcomatica.com">
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+						<i class="fas fa-envelope azul-logo2 fuente_aun_mas_grandecita"></i>
+					</div>
+					<div>
+						<p class="mar0 fuentenorcont">info@arcomatica.com</p>
+					</div>
+				</a>
+			</div>
+		</div> <!-- Final Contactos -->
+
+		<div class="fondo444 grisecito padding-abajo"> <!-- Pie de pág -->
+			<hr class="ochenta margen_sup25_centrado">
+			<p class="ochenta centrado">© 2026 www.arcomatica.com. Diseñado por arcomatica.com</p>
+			<!-- Final pie de pág -->
+		</div>
+	</body>
+</html>

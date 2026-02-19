@@ -1,0 +1,305 @@
+/* Configuración General */
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif; 
+}
+
+/* Lo que le da un efecto de transcision a la página */
+
+@keyframes ENTRADA {
+	from { opacity: 0; transform: translateY(50px); } /* Parece que entra de abajo */
+	to { opacity: 1; transform: translateY(0); } /* Acaba en el centro, en su sitio */
+}
+
+.animacion-fade {
+	animation: ENTRADA 0.5s ease-out forwards;
+/*
+ Para quien trabaje en esta página en el futuro:
+ Esta clase es solo para animar la página (La entrada que hace), pero no solo se hace con esto, pero para
+ hacer que funcione tienes que ponerla de alguna manera, cada vez que cargas algo, en los bloques, para eso
+ puedes mirar la funcion de 'cambiar' en el JavaScript. Pero en resumen:
+ - Añade la clase
+ - Esperar el tiempo necesario (Si es esta, 500ms, si es la de abajo, 400ms)
+ - Elimina la clase (IMPORTANTE SI SE VA A REUTILIZAR)
+ Se puede añadir a cualquier elemento en teoria.
+ Puede que esto se pueda mejorar, no he usado keyframes antes.
+*/
+}
+
+
+@keyframes ENTRADA-2 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animacion-fundido {
+    animation: ENTRADA-2 0.4s ease-in forwards;
+}
+
+
+
+
+/* Tam Lineas */
+.lineheight14 { line-height: 1.4; }
+
+/* Justificaciones */
+.just_sp_ar { justify-content: space-around; }
+
+/* ------------- */
+/* Flex          */
+/* ------------- */
+.flex1 { flex: 1; }
+.wrap_hijos { flex-wrap: wrap; }
+.columnas { flex-direction: column; }
+.flex { display: flex; }
+
+/* ------------- */
+/* margenes      */
+/* ------------- */
+.mar0 { margin: 0; }
+.seppeqizq { margin-right: 15px; }
+.p40margenhor { margin: 40px auto; }
+.margen_arriba_20 { margin-top: 20px; }
+.margen_inf20 { margin-bottom: 20px; }
+.margen_sup25_centrado { margin: 0 auto 25px auto; }
+.centrado { margin: 0 auto; }
+
+/* ------------- */
+/* paddings      */
+/* ------------- */
+.padding-0-20 { padding: 0 20px; }
+.pad_15 { padding: 15px; }
+.relleno_med { padding: 12px 35px; }
+.pad_20 { padding: 20px; }
+.separador-peq-vert { padding: 30px 0; }
+.padding-abajo { padding-bottom: 60px; }
+.pad_60_0 { padding: 60px 0; }
+.pad_15y { padding: 15px 0px; }
+
+/* ------------- */
+/* font-sizes    */ /* PD: NO EMPEZAR CON NUMEROS!! */
+/* ------------- */
+.fuentenorcont { font-size: 1em; } /* Literal "normal" */
+.f28px { font-size: 28px; }
+.fuente_gradecita { font-size: 1.2em; }
+.fuente_aun_mas_grandecita { font-size: 1.6em; }
+.fuente_peq { font-size: 0.7em; }
+.f16px { font-size: 16px; }
+.f200p { font-size: 200%; }
+
+/* ------------- */
+/*  tipo fuentes */ 
+/* ------------- */
+.nonegrita { font-weight: normal; }
+.negrita { font-weight: bold; }
+.negrita_menor { font-weight: 600; }
+
+/* Tipografia */
+.sserif { font-family: sans-serif; }
+
+/* Minimos/Maximos */
+.m250px { min-width: 250px; }
+.pcont1100 { max-width: 1100px; }
+
+/* Alturas/Anchuras/Ambos */
+.ciento_ochenta { height: 180px; }
+.w60h60 { width: 60px; height: 60px; }
+.cien { width: 100%; }
+.veinte { width: 20%; }
+.ochenta { width: 80%; }
+
+/* Bordes */
+.borde_gris { border: 1px #333 solid; }
+.sinbordes { border: none; }
+
+/* Misc */
+.raton_marca { cursor: pointer; }
+.no_redimensionar { resize: none; }
+.separar_hijos { gap: 20px; }
+.justificar_centro { justify-content: center; }
+.centrar_hijos { align-items: center; }
+.sinoutline { outline: none; }
+.ocultar_iconos {  list-style-type: none; }
+.enlace_invisible { text-decoration: none; }
+
+/* Primeras letras */
+.primera_letra_grande:first-letter { font-size: 2em; }
+.primera_letra_aun_mas_grande:first-letter { font-size: 3em; }
+.primera_letra_mucho_mas_grande:first-letter { font-size: 4em; }
+
+/* Colores */
+.bcolor555 { background-color: #555; }
+.color555 { color: #555; }
+.gris_otro { background-color: #f4f4f4; }
+.color888 { color: #888; }
+.azulfondo_otro { background-color: #7cc7eb; }
+.azulcaja1 { background-color: #5ba5c7; }
+.grisecito { color: #999; }
+.azulcaja2 { background-color: #69b4d6; }
+.azulcaja3 { background-color: #7cc7eb; }
+.azulcaja4 { background-color: #8ed6f7; }
+.azulcaja5 { background-color: #a0dcf8; }
+.azul-logo1 { color: #003399; }
+.azul-logo2 { color: #00a0e3; }
+.fondo444 { background-color: #444; }
+.blanco { color: white; }
+.negro { color: black; }
+
+
+
+/* Responsivo para móviles */
+@media (max-width: 1024px) { /* 1024 para que rompa tampoco lo del container fluido con el flex que sobre-baja el texto */
+    .fluido_movil {
+        flex-direction: column; 
+    }
+
+    .caja-servicios {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+    
+    .img-grande {
+        aspect-ratio: 4/3; /* En móvil, una imagen muy ancha se ve demasiado pequeña */
+        background-size: cover;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* CSS que no puedo eliminar, por que hacen transiciones o son metodos que se usan en solo un elemento */
+/* --------------------------------------------------------------------------------------------------- */
+
+.btn-enviar {
+    transition: all 0.3s;
+}
+.btn-enviar:hover {
+    background-color: #5ba5c7;
+}
+iframe { /* Solo va a haber uno */
+    width: 100%;
+    border: none;
+}
+.fotos-acd {
+    transition: all 2s;
+}
+.fotos-acd:hover {
+    width: 30%; /* figcaption transition 1s para hacer el texto 2em?? */
+}
+.contcontactos {
+	transition: color 0.3s;
+}
+.contcontactos:hover {
+	color: lightblue;
+}
+.activo { 
+	background: #7cc7eb;
+}
+
+.img-grande { 
+	width: 100%;
+	aspect-ratio: 10/3;
+	background-image: url('img/teclado-fondo.jpg');
+	background-color: #003399; /* Un color que 'va' con el tema, por si la imagen falla */
+	background-size: 100%; /* O cover, tambien vale */
+	background-repeat: no-repeat;
+}
+
+/* Los contenedores */
+.contenedor { 
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	/* Esto esta aqui mas que nada para hacer el 'logo' (el texto, mas que nada) */
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.barra_arriba {
+	padding: 5px 0;
+	background: #fff;
+}
+.contacto_lista {
+	width: 100%; 
+	background: #444;
+	color: white;
+}
+.caja-contacto { 
+	flex: 1; 
+	padding: 40px 20px; 
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.logo-img {
+	width: 100px;
+	height: auto;
+	display: block;
+}
+.logo-texto {
+	display: flex;
+	flex-direction: column; /* Para que se pege 'arco' y 'matica' */
+	justify-content: center;
+}
+.nombre-brand { /* Las letras grandes (arco-matica) */
+	font-size: 2em; 
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: -1px;
+}
+.subtexto { /* El 'eslogan' ese  de 'soluciones informaticas */
+	font-size: 1em;
+	color: #666;
+	margin: 0;
+	border-top: 1px solid #444; /* Poner el color mejor?? */
+}
+.contacto { 
+	text-align: right;
+	color: #444;
+}
+.contacto p { 
+	font-size: 20px;
+	font-weight: bold;
+}
+.enlaces_barra_navegacion {
+	display: block;
+	padding: 15px 25px;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+
+/* CUIDADO CON LOS QUE HAY AQUI ABAJO */ 
+.caja-servicios { 
+	flex: 1; 
+	padding: 40px 20px; 
+	min-height: 250px;
+	display: flex;
+	height: 250px;
+	flex-direction: column;
+	gap: 20px;
+	transition: transform 0.2s ease;
+	transform-origin: bottom;
+}
+.caja-servicios * {
+    transition: transform 0.3s ease;
+    transform-origin: bottom; 
+}
+.caja-servicios:hover {
+	transform: scaleY(1.5);
+}
+.caja-servicios:hover * {
+    transform: scaleY(0.666); 
+}
+.transicion { transition: all 0.6s; }
+.transicion:hover { background: #7cc7eb; }
+
