@@ -1,0 +1,343 @@
+/* CSS en clases por Juan Pedro */
+
+/* 
+	Por lo general, excepto si se indica lo contrario, se sigue este formato para los nombres
+	* t (Texto)
+	** t-rojo (Texto - color Rojo)
+	** t-doble (Texto - Doble tamaño)
+	** t-20px (Texto - 20 Pixeles)
+
+	* f (Fondo)
+	** f-negro (Fondo - color Negro (black))
+
+	* fu (FUente)
+	** fu-arial (FUente - usar Arial)
+
+	* fug (FUente Grosor)
+	** fug-clara (FUente - Grosor Claro (lighter))
+
+	* at (Alineacion Texto)
+	** at-centro (Alinear Texto al Centro (center))
+
+	* dt (Decoracion Texto)
+	** dt-tachado (Decoracion Texto - Tachado (line-through))
+
+	* ef (Estilo Fuente)
+	** ef-italica (Estilo Fuente Italica)
+	
+	* m{b-l-r-t} (Margen (bottom, left, right, top)
+	** m-5 (Margen 5 px (Todos los margenes)
+	** mb-10 (Margen 5 px inferior (Bottom))
+	
+	* b (Borde)
+	** b-1 (Borde solido 1 pixel)
+	** b-gris (color Borde gris)
+	** bor-10 (BOrde con Redondeado de 10px)
+*/
+
+
+/* VARIABLES (Las tengo que usar mucho en el propio CSS, puedes ignorar esto) */ 
+/* "pro" de "profesional" */
+:root {
+	--azul-pro: #1a56db;
+	--verde-pro: #059669;
+	--gris-suave: #f3f4f6;
+}
+
+
+
+/* Formatos de texto */
+/* De doble a quintuple, añade mas si quieres */
+.t-doble { font-size: 2em; }
+.t-triple { font-size: 3em; }
+.t-quatruple { font-size: 4em; }
+.t-quintuple { font-size: 5em; }
+/* Unos cuantos tamaños comunes */
+.t-10px { font-size: 10px; }
+.t-12px { font-size: 12px; }
+.t-14px { font-size: 14px; }
+.t-16px { font-size: 16px; }
+.t-18px { font-size: 18px; }
+.t-20px { font-size: 20px; }
+.t-22px { font-size: 22px; }
+.t-24px { font-size: 24px; }
+.t-28px { font-size: 28px; }
+.t-32px { font-size: 32px; }
+
+/* Colores letra */
+.t-rojo { color: red; }
+.t-azul { color: blue; }
+.t-verde { color: green; }
+.t-amarillo { color: yellow; }
+.t-naranja { color: orange; }
+.t-gris { color: gray; }
+.t-blanco { color: white; }
+.t-negro { color: black; }
+.t-gris333 { color: #333; }
+
+/* Colores fondo*/
+.f-negro { background-color: black; }
+.f-blanco { background-color: white; }
+.f-rojo { background-color: red; }
+.f-azul { background-color: blue; }
+.f-verde { background-color: green; }
+.f-amarillo { background-color: yellow; }
+.f-gris-claro { background-color: lightgray; }
+.f-blanco-navbar { background-color: rgba(255, 255, 255, 0.9); }
+
+
+
+
+/* Fuentes */
+.fu-arial { font-family: Arial, sans-serif; }
+.fu-verdana { font-family: Verdana, sans-serif; }
+.fu-tahoma { font-family: Tahoma, sans-serif; }
+.fu-times { font-family: 'Times New Roman', serif; }
+.fu-courier { font-family: 'Courier New', monospace; }
+.fu-helvetica { font-family: Helvetica, sans-serif; }
+.fu-roboto-IMPORTADA {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+
+
+/* Fuentes - Grosor */
+.fug-clara { font-weight: lighter; }
+.fug-normal { font-weight: normal; }
+.fug-negrita { font-weight: bold; }
+.fug-fuerte { font-weight: bolder; }
+
+/* Fuentes - Alineacion */
+.at-izquierda { text-align: left; }
+.at-centro { text-align: center; }
+.at-derecha { text-align: right; }
+.at-justificado { text-align: justify; }
+
+/* Fuentes - Decorados */
+.dt-subrayado { text-decoration: underline; }
+.dt-tachado { text-decoration: line-through; }
+.dt-nada { text-decoration: none; }
+
+/* Fuentes - Estilos */
+.ef-italica { font-style: italic; }
+.ef-oblicua { font-style: oblique; }
+
+/* Margenes */
+.m-5 { margin: 5px; }
+.m-10 { margin: 10px; }
+.m-20 { margin: 20px; }
+
+/* Margenes Top */
+.mt-10 { margin-top: 10px; }
+
+/* Margenes Bottom */
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+/* Margenes Left */
+.ml-10 { margin-left: 10px; }
+
+/* Margenes Right */
+.mr-10 { margin-right: 10px; }
+
+/* Rellenos (Padding) */
+.p-5 { padding: 5px; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+.p-10-20 { padding: 10px 20px; }
+.pt-10 { padding-top: 10px; }
+.pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+.pt-20 { padding-top: 20px; }
+.pr-15 { padding-right: 15px; }
+.pl-15 { padding-left: 15px; }
+
+/* Bordes Grosor */
+.b-1 { border: 1px solid; }
+.b-2 { border: 2px solid; }
+
+/* Bordes Colores (puedes combinarlos con los anteriores) */
+.b-negro { border-color: black; }
+.b-rojo { border-color: red; }
+.b-gris { border-color: #ccc; }
+
+/* Redondeado (Border Radius) */
+.bor-4 { border-radius: 4px; }
+.bor-10 { border-radius: 10px; }
+.bor-6 { border-radius: 6px; }
+.bor-8 { border-radius: 8px; }
+.bor-total { border-radius: 50%; }
+
+/* Bordes (Mas) */
+.bord-nada { border: none; }
+
+/* Vista */
+.v-bloque { display: block; }
+.v-linea { display: inline; }
+.v-linea-bloque { display: inline-block; }
+.v-oculto { display: none; }
+
+/* Flexbox basico (Para centrar contenido facil) */
+.v-flex { display: flex; }
+.v-flex-centro { display: flex; justify-content: center; align-items: center; }
+
+/* Anchos comunes */
+.an-25 { width: 25%; }
+.an-50 { width: 50%; }
+.an-75 { width: 75%; }
+.an-100 { width: 100%; }
+.an-0 { width: 0%; }
+
+/* Sombras basicas */
+.s-suave { box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.s-fuerte { box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+/* Sombras modernas */
+.s-pro { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+
+/* Gradientes para el encabezado */
+.g-azul { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
+/* AUN NO ESTA IMPLEMENTADO DEL TODO */
+
+/* Transiciones (para que los botones no cambien de golpe) */
+.tr-suave { transition: color 0.3s ease; }
+
+/* Efecto Hover (al pasar el ratón) */
+.h-subir { transition: all 0.5s; }
+.h-subir:hover { transform: translateY(-10px); } /* El transoform ocupa mas tiempo en la GPU, pero no es nada para cualquier dispositivo relativamente moderno */
+
+/* Contenedores con Padding Extra */
+.p-caja { padding: 1.5rem; }
+.p-caja3 { padding: 3rem; }
+
+/* Unordered lists */
+.li-ninguno { list-style-type: none; }
+
+/* Posiciones */
+.pos_peg { position: sticky }
+
+/* Superior */
+.top0 { top: 0; }
+.top10p { top: 10%; }
+
+/* Indice Z */
+.z1 { z-index: 1; } /* EN EL NAVBAR, SI METES ALGO MAS EN EL Z INDEX, ASEGURATE DE SUBIR ESTO, TIENE QUE SER MAYOR QUE LOS OTROS */
+.z-1 { z-index: -1; }
+
+/* Transiciones */
+.transicion-colortexto-azul { transition: color 0.3s; }
+.transicion-colortexto-azul:hover { color: var(--azul-pro) ; }
+
+.transicion-colortexto-verde { transition: color 0.3s; }
+.transicion-colortexto-verde:hover { color: var(--verde-pro) ; }
+
+.transicion-colortexto-amarillo { transition: color 0.3s; }
+.transicion-colortexto-amarillo:hover { color: yellow ; } /* Para los botones, o esto o un color 'de marca' (Del club) */
+
+.transicion-colorfondo-blanco { transition: background-color 0.3s; }
+.transicion-colorfondo-blanco:hover { background-color: white ; }
+
+.transicion-colorfondo-negro { transition: background-color 0.3s; }
+.transicion-colorfondo-negro:hover { background-color: #333 ; }
+
+
+
+/* Cosas de cursor */
+.cur-pointer { cursor: pointer; }
+
+/* Clases de utilidad (Vamos, que no se como categorizarlas) */
+.centrar { margin: 0 auto; }
+.fondo-borroso2 { backdrop-filter: blur(2px); }
+.redondeado5 { border-radius: 5px; } /* En la barra de arriba */
+
+
+.modooscuro {
+	background-color: #333 !important;
+	color: white !important;
+}
+.modooscuro_minicont { /* El navbar */
+	background-color: #1e1e1e;
+}
+.modooscuro_minicont a {
+	color: white !important;
+}
+.modooscuro_minicont a:hover {
+	color: red !important;
+}
+
+body.mod p, body.mod h3 {
+  color: #333;
+}
+
+.f_oscuro_n1 {
+	background-color: #242424;
+	color: white !important;
+}
+.f_oscuro_n1 * { color: white !important; }
+
+.vacia { ; } /* Para el modo oscuro, esta clase no hace nada*/
+
+
+body.mod span {
+  color: white;
+}
+.forzar-no-trans {
+	transition: none !important;
+}
+
+@media (max-width: 768px) {
+    .an-75 { /* En movil, 75% es muy poco */
+        width: 100%;
+    }
+    .MOVIL {
+		width: 100%;
+		display: grid;
+	}
+	.MOVIL_NO_SA {
+		justify-content: normal !important; /* Como no sea !important la barra de arriba se lo come y no lo usa en movil. */
+	}
+	.MOVIL_MiniBotonLargo { /* Para el boton de arriba de 'redes sociales */
+		margin: 0 auto;
+		width: 80%;
+	}
+	.t-10px .t-12px .t-14px .t-16px .t-18px .t-20px { /* Esto es DESPUES de aplicarse, osea que se mantienen los tamaños, y luego se agrandan un poco */
+		font-size: 1em;
+	}
+	.MOVIL-Letrero {
+		display: block !important;
+		/* Esto es para la parte de los puntos, donde lo de los partidos, que en movil ocupababa mas de la mitad de la pantalla (Horizontalmente)
+		   Cuando estaba como flex, si esta como block sale arriba/abajo, es mejor ocupar espacio vertical que horizontal */
+	}
+}
+
+
+
+
+/* Animaciones ! */
+
+@keyframes entradaarriba {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animar_entrada {
+	animation: 1s ease-out 0s 1 entradaarriba;
+}
+
+
+/* Mover al centro vertical */
+
+.centrarv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
