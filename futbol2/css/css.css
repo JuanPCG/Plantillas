@@ -312,6 +312,7 @@ body.mod span {
 		/* Esto es para la parte de los puntos, donde lo de los partidos, que en movil ocupababa mas de la mitad de la pantalla (Horizontalmente)
 		   Cuando estaba como flex, si esta como block sale arriba/abajo, es mejor ocupar espacio vertical que horizontal */
 	}
+	.MOVIL-100 { width: 95% ; }
 }
 
 
