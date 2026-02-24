@@ -329,7 +329,11 @@ body.mod span {
 	.MOVIL-boton { width: 85% ; }
 }
 
-
+@media (max-height: 768px) {
+	.MOVIL-ancho {
+		width: 95%
+	}
+}
 
 
 /* Animaciones ! */
