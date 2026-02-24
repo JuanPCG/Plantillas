@@ -326,6 +326,7 @@ body.mod span {
 		   Cuando estaba como flex, si esta como block sale arriba/abajo, es mejor ocupar espacio vertical que horizontal */
 	}
 	.MOVIL-100 { width: 95% ; }
+	.MOVIL-boton { width: 85% ; }
 }
 
 
