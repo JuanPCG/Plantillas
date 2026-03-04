@@ -43,8 +43,7 @@
 	--verde-pro: #059669;
 	--gris-suave: #f3f4f6;
 }
-
-
+html { scroll-behavior: smooth; }
 
 /* Formatos de texto */
 /* De doble a quintuple, añade mas si quieres */
