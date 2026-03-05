@@ -1,0 +1,151 @@
+<!--
+	No sobreescribramos los CSS estandar! Mejor que dejemos las cosas como estan y usemos clases!
+-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"> <!-- Characterset del HTML -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Informática,Arcos de la Fra.,Arcos de la Frontera,Arcomática, Tiendas de informática, Reparaciones informáticas">
+		<meta name="author" content="Arcomática">
+		<meta name="description" content="Página web oficial Arcomática"> <!-- Meta etiquetas estandares -->
+
+		<meta property="og:title" content="Cambiar esto">
+		<meta property="og:description" content="Ven a ver nuestros partidos!">
+		<meta property="og:url" content="#ponerenlace">
+		<meta property="og:image" content="#ponerfoto">
+		<meta name="theme-color" content="#003399"> <!-- Todo esto sirve para 'insertar' la página en aplicaciones de mensajeria -->
+
+		<title>CAMBIAR ESTE NOMBRE</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+		<script src="script.js"> /* Separado */ </script>
+	</head>
+	<body onload="cargar()">
+		<header class="barra_arriba"> <!-- La barrita de arriba, la que enseña el logo, telefono y horario -->
+			<div class="contenedor pad_15y">
+				<div class="logo">
+					<img src="img/logo.svg" class="logo-img" alt="Logo">
+					<div class="logo-texto">
+						<div class="nombre-brand">
+							<span class="azul-logo1">Club de</span><span class="azul-logo2"> Futbol (Con colores)</span>
+						</div>
+						<p class="subtexto">(Aqui va un lema o algo por el estilo)</p>
+					</div>
+				</div>
+				<a class="enlace_invisible" href="#partidos/">
+					<div class="contacto">
+						<p>
+							<i class="fas fa-futbol"></i>
+							¡Ven a vernos jugar!
+						</p>
+					</div>
+				</a>
+			</div>
+		</header>
+		<div id="tercero_bloque" class="separador-peq-vert azulcaja5"> <!-- Academia -->
+			<h1 class="centrado" style="display:flex; justify-content: center;">Nuestra historia</h3>
+			<h3 class="ochenta centrado">Aqui se ponen cosas y no se</h3>
+			<div class="flex justificar_centro separar_hijos wrap_hijos pad_20">
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Pon una imagen aqui</figcaption>
+				</figure>
+
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Pon una imagen aqui</figcaption>
+				</figure>
+
+				<figure class="fotos-acd veinte flex columnas centrar_hijos">
+					<img src="img/foto2-CAMBIAME.jpg" class="cien borde_gris">
+					<figcaption>Pon una imagen aqui</figcaption>
+				</figure>
+			</div>
+			<br>
+			<p class="negrita ochenta centrado primera_letra_grande">No se, aqui pones algo, lo que quieras, pon si quieres los jugadores o algo. Se puede intentar implementar lo de la otra página (la primera) o algo, no se, unos botones que se elevan o algo por el estilo.</p>
+			<br>
+			<p class="ochenta centrado negrita">Ultimos partidos</p>
+			<ul class="ochenta centrado ocultar_iconos">
+				<li>No se que</li>
+				<li>No se cuantos</li>
+				<li>Esto es una prueba</li>
+				<li>Lo voy a cambiar por otras cosas luego</li>
+				<li>No se, algo mas</li>
+				<li>Pero que todo este &lt;ul&gt; se quita de aqui</li>
+			</ul>
+		</div> <!-- Fin de la parte academia -->
+
+		<div id="primero_bloque">
+			<section class="img-grande"></section>
+			<section class="servicios">
+				<div class="flex cien wrap_hijos fluido_movil">
+					<div class="caja-servicios azulcaja1 blanco">
+						<i class="fas fa-cog f200p"></i>
+						<h3 class="f16px lineheight14">Venta y reparación de equipos informáticos</h3>
+						<p class="negro negrita">Video vigilancia</p>
+					</div>
+					<div class="caja-servicios azulcaja2 blanco">
+						<i class="fas fa-briefcase f200p"></i>
+						<h3 class="f16px lineheight14">Mantenimiento integral empresas y particulares</h3>
+						<p class="negro negrita">Reparación TV</p>
+					</div>
+					<div class="caja-servicios azulcaja3 blanco">
+						<i class="fas fa-globe f200p"></i>
+						<h3 class="f16px lineheight14">Diseño web y tienda online profesional</h3>
+						<p class="negro negrita">Instalación de redes</p>
+					</div>
+					<div class="caja-servicios azulcaja4 blanco">
+						<i class="fas fa-lightbulb f200p"></i>
+						<h3 class="f16px lineheight14">Reparación móviles y tablets</h3>
+						<p class="negro negrita">Instalación internet Wi-Fi</p>
+					</div>
+					<div class="caja-servicios azulcaja5 blanco">
+						<i class="fas fa-graduation-cap f200p"></i>
+						<h3 class="f16px lineheight14">Academia</h3>
+						<p class="negro negrita">Enseñanzas de informática</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div class="sserif fondo444 pad_60_0 grisecito"> <!-- Contacto -->
+			<p class="m250px flex centrar_hijos">Probando cosas aqui abajo</p>
+			<div class="m250px flex centrar_hijos">
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito"  href="https://maps.app.goo.gl/jN5oDTyEnhcrKeZc8" >	
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+						<i class="fas fa-map-marker-alt azul-logo2 fuente_aun_mas_grandecita"></i>
+					</div>
+					<div>
+						<p class="mar0 fuentenorcont">C/ Fernando Trueba, 15-A</p>
+					</div>
+				</a>
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito" href="tel:657937084">
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+							<i class="fas fa-phone azul-logo2 fuente_aun_mas_grandecita"></i>
+						</div>
+						<div>
+							<p class="mar0 fuentenorcont">657 937 084</p>
+						</div>
+					</a>
+				<a class="contcontactos just_sp_ar pcont1100 centrado flex wrap_hijos centrar_hijos enlace_invisible grisecito" href="mailto:info@arcomatica.com">
+					<div class="iconoconbg bcolor555 flex justificar_centro centrar_hijos w60h60 seppeqizq">
+						<i class="fas fa-envelope azul-logo2 fuente_aun_mas_grandecita"></i>
+					</div>
+					<div>
+						<p class="mar0 fuentenorcont">info@arcomatica.com</p>
+					</div>
+				</a>
+			</div>
+		</div> <!-- Final Contactos -->
+
+		<div class="fondo444 grisecito padding-abajo"> <!-- Pie de pág -->
+			<hr class="ochenta margen_sup25_centrado">
+			<p class="ochenta centrado">© 2026 *EL ENLACE*. Diseñado por arcomatica.com (Lo de diseño se queda bien)</p>
+			<!-- Final pie de pág -->
+		</div>
+	</body>
+</html>
